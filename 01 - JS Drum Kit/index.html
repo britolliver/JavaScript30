@@ -65,6 +65,7 @@
     audio.currentTime=0; //rewind to the start
     audio.play();
     key.classList.add("playing");
+
   }
     
   function removeTransition(e){
@@ -76,7 +77,7 @@
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
     window.addEventListener('keydown',playSound);
-  
+
 </script>
 
 
